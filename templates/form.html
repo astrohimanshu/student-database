@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+<h2>Student Registration</h2>
+
+<form action="/submit" method="post">
+
+    <!-- Text -->
+    <label>Roll No:</label><br>
+    <input type="text" name="roll" required><br><br>
+
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <!-- Email -->
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <!-- Radio -->
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="Male" required> Male<br>
+    <input type="radio" name="gender" value="Female"> Female<br>
+    <input type="radio" name="gender" value="Other"> Other<br><br>
+
+    <!-- Checkbox -->
+    <label>Skills:</label><br>
+    <input type="checkbox" name="skills" value="Python"> Python<br>
+    <input type="checkbox" name="skills" value="C++"> C++<br>
+    <input type="checkbox" name="skills" value="Java"> Java<br>
+    <input type="checkbox" name="skills" value="ML"> ML<br><br>
+
+    <!-- Dropdown single -->
+    <label>Course:</label><br>
+    <select name="course">
+        <option value="BTech">B.Tech</option>
+        <option value="MTech">M.Tech</option>
+        <option value="MBA">MBA</option>
+    </select><br><br>
+
+    <!-- Dropdown multiple -->
+    <label>Languages Known:</label><br>
+    <select name="languages" multiple size="4">
+        <option value="English">English</option>
+        <option value="Hindi">Hindi</option>
+        <option value="French">French</option>
+        <option value="Spanish">Spanish</option>
+    </select><br><br>
+
+    <!-- Range -->
+    <label>Experience (Years): <span id="expValue">0</span></label><br>
+
+    <input type="range"
+        name="experience"
+        min="0"
+        max="10"
+        value="0"
+        oninput="document.getElementById('expValue').innerText = this.value">
+    <br><br>
+
+
+    <!-- Buttons -->
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
