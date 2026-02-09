@@ -26,6 +26,6 @@ Thumbs.db
 # Jupyter (if ever used)
 .ipynb_checkpoints/
 
-# CSV data (optional)
-# Uncomment if you don't want to track student data
-# students.csv
+# CSV data
+
+students.csv
